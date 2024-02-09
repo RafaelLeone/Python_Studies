@@ -45,6 +45,7 @@ def find_higher(current_list):
 
 print(find_higher(arr))
 
+# Study purposes only. Not used.
 def count_appearances(first_highest, second_highest, curr_list):
     first_highest_appearances = 0
     second_highest_appearances = 0
