@@ -1,6 +1,6 @@
-# estudos_python
-
-Python studies repository.
+# Python studies
 
 ```pip install pytest```
+
+
 ```pytest```
