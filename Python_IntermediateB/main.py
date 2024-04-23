@@ -27,7 +27,7 @@ print(data)
 # Delete data.
 columns_to_drop.append('Percentage')
 data = data.drop(columns=columns_to_drop)
-data.to_csv('totk_tracker.csv', index=False)
+# data.to_csv('totk_tracker.csv', index=False) ***DONE***
 
 new_data = pandas.read_csv('totk_tracker.csv')
 print(new_data)

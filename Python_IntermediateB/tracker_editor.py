@@ -23,8 +23,10 @@ data['Remaining to find'] = remaining_to_find
 found_to_do = data.Remaining - data['Remaining to find']
 data['Found to do'] = found_to_do
 
-# Reorder
+# Reorder.
 new_order = [5, 1, 0, 4, 2, 3]  # Example order of rows
 result_data = data.reindex(new_order)
 
 print(result_data)
+
+# To do: Properly reorder and create new csv in this folder.
