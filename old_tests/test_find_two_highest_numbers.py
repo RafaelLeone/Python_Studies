@@ -1,4 +1,4 @@
-from find_two_highest_numbers import find_higher
+from old.find_two_highest_numbers import find_higher
 
 def test_find_higher():
     result = find_higher([-10, 80, 100, 80, 100, 80, 100, 90, 90, 90, 100, 80, 100, 100, 90])
