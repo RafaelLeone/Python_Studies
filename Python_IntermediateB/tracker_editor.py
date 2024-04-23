@@ -24,7 +24,10 @@ found_to_do = data.Remaining - data['Remaining to find']
 data['Found to do'] = found_to_do
 
 # Reorder.
-new_order = [5, 1, 0, 4, 2, 3]  # Example order of rows
+data_dict = {index: float(row['Percentage'][:-1]) for (index, row) in data.iterrows()}
+# Order the dictionary by values
+sorted_dict = dict(sorted(data_dict.items(), key=lambda item: item[1]))
+new_order = list(sorted_dict.keys())
 result_data = data.reindex(new_order)
 
 print(result_data)
